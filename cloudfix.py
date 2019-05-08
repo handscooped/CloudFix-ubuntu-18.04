@@ -1,4 +1,4 @@
-#!/usr/bin/enc python
+#!/usr/bin/env python
 import yaml
 
 with open("/etc/netplan/50-cloud-init.yaml", "r") as f:
