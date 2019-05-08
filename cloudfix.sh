@@ -1,9 +1,16 @@
 #!/bin/bash
 
+FILE = ~/cloudfix.py
+if test -f FILE; then
+
 sudo python3 ~/cloudfix.py
+
 sudo rm -r /etc/netplan/50-cloud-init.yaml
+sudo rm -r ~/cloudfix.py
 
 sudo netplan apply
+
+fi
 
 clear
 cat << "EOF"
