@@ -1,3 +1,10 @@
+#!/bin/bash
+
+sudo python3 ~/cloudfix.py
+sudo rm -r /etc/netplan/50-cloud-init.yaml
+
+sudo netplan apply
+
 clear
 cat << "EOF"
  __  __           _            _    _           _     
